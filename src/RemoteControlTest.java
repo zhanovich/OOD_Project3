@@ -1,8 +1,8 @@
 public class RemoteControlTest {
 	public static void main(String[] args) {
 		SimpleRemoteControl remote = new SimpleRemoteControl();
-		DiscoLight discoLight = new DiscoLight();
-		SmokeMachine smokeMachine = new SmokeMachine();
+		DiscoLight discoLight = new DiscoLight("Scene");
+		SmokeMachine smokeMachine = new SmokeMachine("Scene");
 		DiscoLightOnCommand lightOn = new DiscoLightOnCommand(discoLight);
 		SmokeMachineOnCommand smokeMachineOn =
 		new SmokeMachineOnCommand(smokeMachine);
